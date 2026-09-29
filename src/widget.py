@@ -18,3 +18,17 @@ def mask_account_card(account_info: str) -> str:
     # Склеиваем все вместе
     return name + " " + masked
 
+""" Функция, которая выводит дату """
+def get_date(date: str) -> str:
+    # Разбиваем на время и дату
+    date_time = date.split("T")
+    date_part = date_time[0]
+
+    # Разбиваем по дефису на части
+    parts = date_part.split("-")
+    year = parts[0]
+    month = parts[1]
+    day = parts[2]
+
+    return day + "." + month + "." + year
+
