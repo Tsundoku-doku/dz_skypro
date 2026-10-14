@@ -1,3 +1,4 @@
+""" Фунуция, возвращает новый список словарей"""
 def filter_by_state(operations, state="EXECUTED"):
     #Создаем пустой список
     result =[]
